@@ -1,0 +1,17 @@
+########################################################
+### @author   MD. EMRAN HOSSAIN                       ##
+### @version  1.0                                     ##
+### @since    24 MAR, 2023                            ##
+########################################################
+#
+#databaseChangeLog:
+#  -   changeSet:
+#        id: populate tables
+#        author: Md Emran Hossain
+#        changes:
+#            - loadData:
+#                  encoding: "UTF-8"
+#                  file: test.csv
+#                  relativeToChangelogFile: true
+#                  tableName: test
+#                  quotchar: '"'

@@ -1,0 +1,16 @@
+#######################################################
+## @author   MD. EMRAN HOSSAIN                       ##
+## @version  1.0                                     ##
+## @since    24 MAR, 2023                            ##
+#######################################################
+
+databaseChangeLog:
+  - include:
+      file: test.yml
+      relativeToChangelogFile: true
+  - include:
+      file: valid_customer.yml
+      relativeToChangelogFile: true
+  - include:
+      file: invalid_customer.yml
+      relativeToChangelogFile: true

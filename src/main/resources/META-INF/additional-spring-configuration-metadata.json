@@ -1,0 +1,32 @@
+{"properties": [
+  {
+    "name": "server.tomcat.max-threads",
+    "type": "java.lang.String",
+    "description": "A description for 'server.tomcat.max-threads'"
+  },
+  {
+    "name": "acl.url",
+    "type": "java.lang.String",
+    "description": "A description for 'acl.url'"
+  },
+  {
+    "name": "file.file-dir",
+    "type": "java.lang.String",
+    "description": "A description for 'file.file-dir'"
+  },
+  {
+    "name": "regex.phone",
+    "type": "java.lang.String",
+    "description": "A description for 'regex.phone'"
+  },
+  {
+    "name": "regex.email",
+    "type": "java.lang.String",
+    "description": "A description for 'regex.email'"
+  },
+  {
+    "name": "file.exportDir",
+    "type": "java.lang.String",
+    "description": "A description for 'file.exportDir'"
+  }
+]}

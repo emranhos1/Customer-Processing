@@ -1,0 +1,21 @@
+#######################################################
+## @author   MD. EMRAN HOSSAIN                       ##
+## @version  1.0                                     ##
+## @since    24 MAR, 2023                            ##
+#######################################################
+
+databaseChangeLog:
+  - preConditions:
+      or:
+        dbms:
+          - type: postgresql
+  - property:
+      name: now
+      value: NOW()
+
+  - include:
+      file: changes/dev/v1.0/tables/db.table-changelog.yml
+      relativeToChangelogFile: true
+#  - include:
+#      file: changes/dev/v1.0/seeds/db.seed-changelog.yml
+#      relativeToChangelogFile: true

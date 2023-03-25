@@ -1,0 +1,61 @@
+#######################################################
+## @author   MD. EMRAN HOSSAIN                       ##
+## @version  1.0                                     ##
+## @since    24 MAR, 2023                            ##
+#######################################################
+
+databaseChangeLog:
+  - changeSet:
+      id: create invalid_customer table
+      author: Md. Emran Hossain
+      changes:
+        - createTable:
+            tableName: invalid_customer
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: branch
+                  type: varchar(100)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: city
+                  type: varchar(100)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: state
+                  type: varchar(100)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: zip_code
+                  type: varchar(100)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: phone_no
+                  type: varchar(100)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: email
+                  type: varchar(100)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: ip_address
+                  type: varchar(100)
+                  constraints:
+                    nullable: true

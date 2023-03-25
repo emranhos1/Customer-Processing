@@ -1,0 +1,33 @@
+#######################################################
+## @author   Md. Emran Hossain                       ##
+## @version  1.0                                     ##
+## @since    24 MAR, 2023                            ##
+#######################################################
+
+server:
+  port: 8080
+  tomcat:
+    max-threads: 400
+  servlet:
+    context-path: /api
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 40MB
+  profiles:
+    active: dev
+  application:
+    name: cp
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        temp:
+          use-jdbc-metadata-defaults: false
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+  hateoas:
+    use-hal-as-default-json-media-type: false

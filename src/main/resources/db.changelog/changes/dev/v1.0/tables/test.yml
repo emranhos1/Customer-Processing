@@ -1,0 +1,51 @@
+#######################################################
+## @author   MD. EMRAN HOSSAIN                       ##
+## @version  1.0                                     ##
+## @since    24 MAR, 2023                            ##
+#######################################################
+
+databaseChangeLog:
+  - changeSet:
+      id: create test table
+      author: Md. Emran Hossain
+      changes:
+        - createTable:
+            tableName: test
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: bn_name
+                  type: varchar(100)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: created_at
+                  type: timestamp
+                  constraints:
+                    nullable: false
+              - column:
+                  name: updated_at
+                  type: timestamp
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created_by
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: updated_by
+                  type: BIGINT
+                  constraints:
+                    nullable: false
