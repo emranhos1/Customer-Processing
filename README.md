@@ -1,6 +1,6 @@
 # Read Me First
 
-**This project contain spring boot, postgresql, liquibase, swagger**
+# *This project contain spring boot, postgresql, liquibase, swagger*
 1. clone this project  (```git clone https://github.com/emranhos1/Customer-Processing.git```)
 2. clean build this project (```mvn clean install``` OR ```mvn clean package```)
 3. Run this project (```mvn spring-boot:run```)
