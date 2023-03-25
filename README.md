@@ -9,8 +9,7 @@
 <img width="500" height="200" alt="image" src="https://user-images.githubusercontent.com/20554949/227706728-cefe746b-bc43-4851-b20c-1c7116abb6b8.png">
 
 6.  ```/parse-data``` api parse all 1M data from *1M-customers.txt*  file what are located at ```/src/main/resources/1M-customers.txt```
-<img width="500" height="200" alt="image" src="https://user-images.githubusercontent.com/20554949/227707589-bbad53bb-d8a4-452d-ba0d-7e20787ab063.png">
-<img width="500" height="200" alt="image" src="https://user-images.githubusercontent.com/20554949/227707618-5bd78939-bec4-4188-9a99-b7a625d3642b.png">
+<img width="500" height="200" alt="image" src="https://user-images.githubusercontent.com/20554949/227707589-bbad53bb-d8a4-452d-ba0d-7e20787ab063.png"><img width="500" height="200" alt="image" src="https://user-images.githubusercontent.com/20554949/227707618-5bd78939-bec4-4188-9a99-b7a625d3642b.png">
 
 Follow images and wait for parse response
 
