@@ -6,4 +6,4 @@
 3. Run this project (```mvn spring-boot:run```)
 4. after run your can find swagger url here (```http://localhost:8080/api/swagger-ui/index.html#/```)
 5. In swagger you find 2 api under *customer-controller*
-<img width="960" alt="image" src="https://user-images.githubusercontent.com/20554949/227706728-cefe746b-bc43-4851-b20c-1c7116abb6b8.png">
+<img width="400" height="400" alt="image" src="https://user-images.githubusercontent.com/20554949/227706728-cefe746b-bc43-4851-b20c-1c7116abb6b8.png">
