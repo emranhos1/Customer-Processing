@@ -16,3 +16,6 @@ Follow images and wait for parse response
 8.  ```/export-data``` api export all valid customer data from datbase add write them in text files. each file contain 10K data 
 9.  All exported files are located at ```/src/main/resources/export/```
 10.  You can also find how mane time it takes while parsing data form project console statistics lookes like bellow
+<img width="500" height="200" alt="image" src="https://user-images.githubusercontent.com/20554949/227708195-5fdffe13-90b8-456d-ba99-25bcbfab3732.png">
+its takes some time 
+
