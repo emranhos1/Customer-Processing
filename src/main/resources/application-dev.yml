@@ -28,7 +28,7 @@ logging:
       springframework:
         web: DEBUG
       hibernate:
-        SQL: debug
+        SQL: error
         stat: debug
     com:
       synesisit:

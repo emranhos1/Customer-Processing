@@ -32,6 +32,6 @@ spring:
             non_contextual_creation: true
     hibernate:
       ddl-auto: none
-    show-sql: true
+    show-sql: false
   hateoas:
     use-hal-as-default-json-media-type: false

@@ -6,9 +6,6 @@
 
 databaseChangeLog:
   - include:
-      file: test.yml
-      relativeToChangelogFile: true
-  - include:
       file: valid_customer.yml
       relativeToChangelogFile: true
   - include:
