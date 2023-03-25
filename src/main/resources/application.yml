@@ -26,6 +26,10 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         temp:
           use-jdbc-metadata-defaults: false
+        generate_statistics: true
+        jdbc:
+          lob:
+            non_contextual_creation: true
     hibernate:
       ddl-auto: none
     show-sql: true

@@ -24,6 +24,7 @@ public class Validator {
      *
      * @author MD. EMRAN HOSSAIN
      * @param phoneNo - String
+     * @return isValid - boolean
      * @since 24 MAR, 2023
      */
     public Boolean validatePhone(String phoneNo){
@@ -35,7 +36,8 @@ public class Validator {
      * This method return is email is validate or not
      *
      * @author MD. EMRAN HOSSAIN
-     * @param phoneNo - String
+     * @param email - String
+     * @return isValid - boolean
      * @since 24 MAR, 2023
      */
     public Boolean validateEmail(String email){

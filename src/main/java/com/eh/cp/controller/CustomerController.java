@@ -1,7 +1,5 @@
 package com.eh.cp.controller;
 
-import java.util.Date;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -59,7 +57,10 @@ public class CustomerController {
     @GetMapping(CustomerConstants.PARSE_API_ENDPOINT)
     public ResponseEntity<?> parseData(){
         try {
+            long startTime = System.nanoTime();
             Boolean parsedData = iCustomerService.parseData();
+            long endTime = System.nanoTime();
+            LOG.info("Total Time in nanoseconds: {}", endTime - startTime);
             if(parsedData) {
                 return ResponseEntity.ok(new ApiResponse(true, CustomerMessageConstants.DATA_PROCESS_EN, CustomerMessageConstants.DATA_PROCESS_BN, CustomerMessageConstants.DATA_PROCESS_EN, 1L));
             } else {
@@ -88,10 +89,8 @@ public class CustomerController {
     @GetMapping(CustomerConstants.EXPORT_API_ENDPOINT)
     public ResponseEntity<?> exportData(){
         try {
-            LOG.info("Process Start {}", new Date());
-            Boolean parsedData = iCustomerService.exprotData();
-            LOG.info("Process End {}", new Date());
-            if(parsedData) {
+            Boolean exprotData = iCustomerService.exprotData();
+            if(exprotData) {
                 return ResponseEntity.ok(new ApiResponse(true, CustomerMessageConstants.DATA_EXPORT_EN, CustomerMessageConstants.DATA_EXPORT_BN, "You can find those file in " + exportDir, 1L));
             } else {
                 return new ResponseEntity(new ErrorResponse(false, CustomerMessageConstants.DATA_EXPORT_FAILD_EN, CustomerMessageConstants.DATA_EXPORT_FAILD_EN, CustomerMessageConstants.DATA_EXPORT_FAILD_EN, null), HttpStatus.OK);
